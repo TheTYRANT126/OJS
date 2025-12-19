@@ -1,0 +1,17 @@
+# 1. Ignorar TODO por defecto en la raíz
+/*
+
+# 2. Excepciones básicas (No ignorar estos archivos)
+!.gitignore
+!README.md
+
+# 3. Permitir a Git ENTRAR en la ruta de carpetas (Whitelisting de directorios)
+!/plugins/
+!/plugins/themes/
+
+# 4. gnorar el contenido de esas carpetas para no subir otros temas basura
+/plugins/*
+/plugins/themes/*
+
+# 5. no ignorar el tema
+!/plugins/themes/Amcad/
