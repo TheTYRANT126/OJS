@@ -158,7 +158,9 @@ body {
 
 .header-logo-link {
     text-decoration: none;
-    display: block;
+    display: flex;
+    align-items: center;
+    height: 100%;
 }
 
 .header-logo {
@@ -207,6 +209,7 @@ body {
 .header-logo img {
     height: 70px;
     width: auto;
+    display: block;
 }
 
 .main-nav ul {
