@@ -1,0 +1,184 @@
+/* AMCAD frontend header for OJS pages (scoped) */
+.amcad-portal-shell .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+.amcad-portal-shell .main-header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 70px;
+    overflow: visible;
+}
+
+.amcad-portal-shell .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    gap: 40px;
+}
+
+.amcad-portal-shell .header-top-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.amcad-portal-shell .header-logo-link {
+    text-decoration: none;
+    display: block;
+}
+
+.amcad-portal-shell .header-logo img {
+    height: 70px;
+    width: auto;
+}
+
+.amcad-portal-shell .menu-toggle {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4px;
+    width: 30px;
+    min-width: 30px;
+    max-width: 30px;
+    height: 30px;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    padding: 0;
+}
+
+.amcad-portal-shell .menu-toggle-bar {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: #333333;
+}
+
+.amcad-portal-shell .main-nav {
+    margin-left: auto;
+}
+
+.amcad-portal-shell .main-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 35px;
+    margin: 0;
+    padding: 0;
+}
+
+.amcad-portal-shell .main-nav a {
+    color: #333333;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: color 0.3s;
+}
+
+.amcad-portal-shell .main-nav a:hover {
+    color: #84ac74;
+}
+
+.amcad-portal-shell .lang-selector {
+    display: flex;
+    align-items: center;
+}
+
+.amcad-portal-shell .lang-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #333333;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+
+    .amcad-portal-shell .main-header {
+        height: auto;
+        overflow: hidden;
+    }
+
+    .amcad-portal-shell .header-content {
+        height: auto;
+        padding: 10px 0;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .amcad-portal-shell .header-top-row {
+        width: 100%;
+        position: relative;
+        justify-content: center;
+        min-height: 56px;
+    }
+
+    .amcad-portal-shell .header-logo {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .amcad-portal-shell .header-logo img {
+        height: 50px;
+    }
+
+    .amcad-portal-shell .menu-toggle {
+        position: absolute;
+        right: 0;
+        display: inline-flex;
+        width: 28px;
+        min-width: 28px;
+        max-width: 28px;
+        height: 28px;
+    }
+
+    .amcad-portal-shell .main-nav {
+        display: none;
+        width: 100%;
+    }
+
+    .amcad-portal-shell .main-nav.is-open {
+        display: block;
+    }
+
+    .amcad-portal-shell .main-nav ul {
+        flex-direction: column;
+        gap: 12px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .amcad-portal-shell .main-nav a {
+        font-size: 0.9rem;
+    }
+
+    .amcad-portal-shell .lang-selector {
+        display: none;
+        width: auto;
+        align-self: center;
+        text-align: center;
+    }
+
+    .amcad-portal-shell .main-nav.is-open ~ .lang-selector {
+        display: flex;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .amcad-portal-shell .header-logo img {
+        height: 44px;
+    }
+}

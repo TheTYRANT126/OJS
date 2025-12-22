@@ -8,10 +8,34 @@
 # 3. Permitir a Git ENTRAR en la ruta de carpetas (Whitelisting de directorios)
 !/plugins/
 !/plugins/themes/
+!/plugins/generic/
+!/amcad-portal/
+!/lib/
+!/lib/pkp/
+!/lib/pkp/templates/
+!/lib/pkp/templates/layouts/
 
 # 4. gnorar el contenido de esas carpetas para no subir otros temas basura
 /plugins/*
 /plugins/themes/*
+/plugins/generic/*
+/amcad-portal/*
+/lib/*
 
 # 5. no ignorar el tema
 !/plugins/themes/Amcad/
+!/plugins/themes/AmcadX/
+!/plugins/themes/AmcadX/**
+!/plugins/generic/globalCategories/
+!/amcad-portal/**
+!/lib/pkp/templates/layouts/backend.tpl
+
+# 6. Ignorar mensajes de contacto (datos sensibles)
+/amcad-portal/contact_messages/messages_*.txt
+
+# 7. Ignorar base de datos de administración y archivos subidos
+/amcad-portal/data/
+/amcad-portal/uploads/
+
+# 8. Ignorar configuraciones locales
+/.claude/

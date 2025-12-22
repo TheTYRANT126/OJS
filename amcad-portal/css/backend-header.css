@@ -1,0 +1,311 @@
+/* AMCAD backend header (scoped) */
+.amcad-backend .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.amcad-backend .top-banner {
+    background-color: #84ac74;
+    color: #ffffff;
+    padding: 15px 0;
+}
+
+.amcad-backend .banner-content {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 30px;
+}
+
+.amcad-backend .banner-logo-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.amcad-backend .banner-logo {
+    height: 120px;
+    width: auto;
+}
+
+.amcad-backend .banner-text {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.amcad-backend .banner-text h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    line-height: 1.2;
+    color: #000000;
+}
+
+.amcad-backend .banner-text .slogan {
+    font-size: 1rem;
+    font-style: italic;
+    letter-spacing: 0.5px;
+    color: #000000;
+}
+
+.amcad-backend .banner-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 15px;
+}
+
+.amcad-backend .social-icons {
+    display: flex;
+    gap: 10px;
+    position: relative;
+    top: 55px;
+}
+
+.amcad-backend .social-icons a {
+    display: block;
+    transition: transform 0.3s;
+}
+
+.amcad-backend .social-icons a:hover {
+    transform: scale(1.1);
+}
+
+.amcad-backend .social-icons img {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.amcad-backend .main-header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 1100;
+    height: 70px;
+    overflow: visible;
+}
+
+.amcad-backend .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    gap: 40px;
+}
+
+.amcad-backend .header-top-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.amcad-backend .header-logo-link {
+    text-decoration: none;
+    display: block;
+}
+
+.amcad-backend .header-logo img {
+    height: 70px;
+    width: auto;
+}
+
+.amcad-backend .header-logo {
+    display: flex;
+    align-items: center;
+    height: 70px;
+}
+
+.amcad-backend .menu-toggle {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4px;
+    width: 30px;
+    min-width: 30px;
+    max-width: 30px;
+    height: 30px;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    padding: 0;
+}
+
+.amcad-backend .menu-toggle-bar {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: #333333;
+}
+
+.amcad-backend .main-nav {
+    margin-left: auto;
+}
+
+.amcad-backend .main-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 35px;
+    margin: 0;
+    padding: 0;
+}
+
+.amcad-backend .main-nav a {
+    color: #333333;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: color 0.3s;
+}
+
+.amcad-backend .main-nav a:hover {
+    color: #84ac74;
+}
+
+.amcad-backend .lang-selector {
+    display: flex;
+    align-items: center;
+}
+
+.amcad-backend .lang-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #333333;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .amcad-backend .banner-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .amcad-backend .banner-logo-wrapper {
+        justify-content: center;
+    }
+
+    .amcad-backend .banner-logo {
+        height: 80px;
+    }
+
+    .amcad-backend .banner-text {
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .amcad-backend .banner-text h1 {
+        font-size: 1.3rem;
+    }
+
+    .amcad-backend .banner-right {
+        align-items: center;
+    }
+
+    .amcad-backend .social-icons {
+        top: 0;
+        justify-content: center;
+        margin-top: 8px;
+    }
+
+    .amcad-backend .main-header {
+        height: auto;
+        overflow: hidden;
+    }
+
+    .amcad-backend .header-content {
+        height: auto;
+        padding: 10px 0;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .amcad-backend .header-top-row {
+        width: 100%;
+        position: relative;
+        justify-content: center;
+        min-height: 56px;
+    }
+
+    .amcad-backend .header-logo {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .amcad-backend .header-logo img {
+        height: 50px;
+    }
+
+    .amcad-backend .menu-toggle {
+        position: absolute;
+        right: 0;
+        display: inline-flex;
+        width: 28px;
+        min-width: 28px;
+        max-width: 28px;
+        height: 28px;
+    }
+
+    .amcad-backend .main-nav {
+        display: none;
+        width: 100%;
+    }
+
+    .amcad-backend .main-nav.is-open {
+        display: block;
+    }
+
+    .amcad-backend .main-nav ul {
+        flex-direction: column;
+        gap: 12px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .amcad-backend .main-nav a {
+        font-size: 0.9rem;
+    }
+
+    .amcad-backend .lang-selector {
+        display: none;
+        width: auto;
+        align-self: center;
+        text-align: center;
+    }
+
+    .amcad-backend .main-nav.is-open ~ .lang-selector {
+        display: flex;
+    }
+}
+
+@media (max-width: 480px) {
+    .amcad-backend .banner-logo {
+        height: 60px;
+    }
+
+    .amcad-backend .banner-text h1 {
+        font-size: 1rem;
+    }
+
+    .amcad-backend .banner-text .slogan {
+        font-size: 0.75rem;
+    }
+
+    .amcad-backend .social-icons img {
+        width: 28px;
+        height: 28px;
+    }
+
+    .amcad-backend .header-logo img {
+        height: 44px;
+    }
+}
