@@ -1,11 +1,11 @@
 RewriteEngine On
 
-# Allow the native OJS front controller and supporting paths (login, register, API, etc.)
-RewriteRule ^(index|api|cache|classes|controllers|dbscripts|docs|files|js|lib|locale|pages|plugins|public|registry|schemas|styles|templates|tools)(/.*)?$ - [L]
-
-# Let important root files bypass the portal reroute
-RewriteRule ^(config\.inc\.php|config\.TEMPLATE\.inc\.php|favicon\.ico|robots\.txt|README\.md|index\.php)$ - [L]
-
-# Anything else (including the site root and portal assets) should resolve inside /amcad-portal
+# 1) Send everything that is NOT part of the OJS core to /amcad-portal
 RewriteCond %{REQUEST_URI} !^/amcad-portal/
+RewriteCond %{REQUEST_URI} !^/(index\.php|index/|api/|cache/|classes/|controllers/|dbscripts/|docs/|files/|js/|lib/|locale/|pages/|plugins/|public/|registry/|schemas/|styles/|templates/|tools/|config\.inc\.php|config\.TEMPLATE\.inc\.php|favicon\.ico|robots\.txt|README\.md|busqueda-amcad\.php)
 RewriteRule ^(.*)$ amcad-portal/$1 [L]
+
+# 2) Preserve OJS friendly URLs (restful_urls = On)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php/$1 [QSA,L]
