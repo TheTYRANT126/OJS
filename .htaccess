@@ -1,6 +1,8 @@
 RewriteEngine On
 
 # 1) Send everything that is NOT part of the OJS core to /amcad-portal
+#    Only apply on the hosted domain so localhost subdir installs keep working.
+RewriteCond %{HTTP_HOST} ^paleturquoise-frog-799568\.hostingersite\.com$ [NC]
 RewriteCond %{REQUEST_URI} !^/amcad-portal/
 RewriteCond %{REQUEST_URI} !^/(index\.php|index/|api/|cache/|classes/|controllers/|dbscripts/|docs/|files/|js/|lib/|locale/|pages/|plugins/|public/|registry/|schemas/|styles/|templates/|tools/|config\.inc\.php|config\.TEMPLATE\.inc\.php|favicon\.ico|robots\.txt|README\.md|busqueda-amcad\.php)
 RewriteRule ^(.*)$ amcad-portal/$1 [L]

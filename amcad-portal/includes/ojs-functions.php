@@ -15,8 +15,12 @@ if (!defined('INDEX_FILE_LOCATION')) {
 // Cambiar al directorio de OJS
 chdir($ojsBasePath);
 
-// Incluir el bootstrap de OJS
-$application = require($ojsBasePath . '/lib/pkp/includes/bootstrap.inc.php');
+// Incluir el bootstrap de OJS (varia segun version)
+$bootstrapPath = $ojsBasePath . '/lib/pkp/includes/bootstrap.inc.php';
+if (!file_exists($bootstrapPath)) {
+    $bootstrapPath = $ojsBasePath . '/lib/pkp/includes/bootstrap.php';
+}
+$application = require($bootstrapPath);
 
 // Inicializar el request si no existe
 if (!isset($_SERVER['REQUEST_URI'])) {
