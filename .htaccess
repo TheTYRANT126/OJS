@@ -1,5 +1,7 @@
 RewriteEngine On
 
-# Redirigir raíz a amcad-portal/index.php
-RewriteRule ^$ amcad-portal/index.php [L]
-RewriteRule ^index\.php$ amcad-portal/index.php [L]
+# Evitar recursión
+RewriteCond %{REQUEST_URI} !^/amcad-portal/
+
+# Redirigir todas las solicitudes a la carpeta amcad-portal conservando la ruta
+RewriteRule ^(.*)$ amcad-portal/$1 [L]
