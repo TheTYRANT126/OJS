@@ -12,13 +12,11 @@
 /amcad-portal/uploads/
 /.claude/
 
-# 4. Ignorar el contenido generico de plugins, portal y lib
+# 4. Ignorar el contenido generico de plugins y lib
 /plugins/*
-/amcad-portal/*
 /lib/*
-/tools/*
 
-# 5. Volver a incluir solo lo que necesitamos
+# 5. Volver a incluir lo que si versionamos
 !/plugins/themes/Amcad/
 !/plugins/themes/Amcad/**
 !/plugins/themes/AmcadX/
@@ -27,6 +25,6 @@
 !/plugins/generic/globalCategories/**
 
 !/amcad-portal/**
-!/tools/resetUserPassword.php
+!/tools/**
 
 !/lib/pkp/templates/layouts/backend.tpl
