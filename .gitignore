@@ -12,26 +12,19 @@
 /amcad-portal/uploads/
 /.claude/
 
-# 4. Ignorar el contenido generico de plugins, portal y lib
+# 4. Ignorar el contenido genérico de plugins, portal y lib
 /plugins/*
 /amcad-portal/*
 /lib/*
 
-# 5. Volver a incluir las rutas necesarias (ordenado del padre al hijo)
-!/plugins/
-!/plugins/themes/
+# 5. Volver a incluir solo lo que necesitamos
 !/plugins/themes/Amcad/
 !/plugins/themes/Amcad/**
 !/plugins/themes/AmcadX/
 !/plugins/themes/AmcadX/**
-!/plugins/generic/
 !/plugins/generic/globalCategories/
 !/plugins/generic/globalCategories/**
 
 !/amcad-portal/**
 
-!/lib/
-!/lib/pkp/
-!/lib/pkp/templates/
-!/lib/pkp/templates/layouts/
 !/lib/pkp/templates/layouts/backend.tpl
