@@ -1,0 +1,435 @@
+/**
+ * @file styles/amcad-custom.less
+ *
+ * AMCAD X Theme - Custom Styles
+ * Inspired by AMCAD website and UNAM catalog design
+ *
+ */
+
+// ===========================
+// HEADER - AMCAD Style
+// ===========================
+
+// Top Bar
+.amcad-topbar {
+	background: @dark-grey;
+	color: white;
+	padding: 0.5rem 0;
+	font-size: 0.875rem;
+	position: relative;
+	z-index: 1100;
+
+	.amcad-topbar-text {
+		color: white;
+		font-weight: 600;
+	}
+
+	.amcad-topbar-nav {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		gap: 1rem;
+
+		.amcad-user-menu {
+			display: flex;
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			gap: 1rem;
+
+			.amcad-user-item {
+				a {
+					color: white;
+					text-decoration: none;
+					font-size: 0.875rem;
+					transition: color 0.3s ease;
+
+					&:hover {
+						color: @primary-light;
+					}
+				}
+			}
+		}
+	}
+
+	.dropdown-menu {
+		z-index: 1200;
+	}
+}
+
+// Main Header
+.amcad-header {
+	background: white;
+	padding: 1.5rem 0;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+
+	.amcad-brand-wrapper {
+		margin: 0;
+
+		.amcad-brand-link {
+			display: inline-block;
+			text-decoration: none;
+
+			.amcad-logo {
+				max-height: 80px;
+				width: auto;
+				transition: transform 0.3s ease;
+
+				&:hover {
+					transform: scale(1.05);
+				}
+			}
+
+			.amcad-site-name {
+				font-family: @font-serif;
+				font-size: 1.75rem;
+				font-weight: 700;
+				color: @primary;
+				text-decoration: none;
+			}
+		}
+	}
+
+	.amcad-navbar {
+		padding: 0;
+
+		.navbar-toggler {
+			border-color: @primary;
+
+			.navbar-toggler-icon {
+				background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(1, 112, 185, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+			}
+		}
+
+		.amcad-primary-menu {
+			.amcad-nav-item {
+				margin-left: 1.5rem;
+
+				a {
+					color: @dark-grey;
+					font-weight: 600;
+					font-size: 1rem;
+					text-decoration: none;
+					padding: 0.5rem 0;
+					border-bottom: 2px solid transparent;
+					transition: all 0.3s ease;
+
+					&:hover,
+					&.active {
+						color: @primary;
+						border-bottom-color: @primary;
+					}
+				}
+
+				&:first-child {
+					margin-left: 0;
+				}
+			}
+		}
+	}
+}
+
+// Responsive Header
+@media (max-width: 991px) {
+	.amcad-header {
+		.amcad-navbar {
+			.amcad-primary-menu {
+				margin-top: 1rem;
+
+				.amcad-nav-item {
+					margin-left: 0;
+					margin-bottom: 0.5rem;
+
+					a {
+						display: block;
+						padding: 0.75rem 1rem;
+						border-left: 3px solid transparent;
+						border-bottom: none;
+
+						&:hover,
+						&.active {
+							border-left-color: @primary;
+							background: @light-grey;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.amcad-topbar {
+		.amcad-topbar-nav {
+			flex-direction: column;
+			align-items: flex-end;
+			gap: 0.5rem;
+		}
+	}
+}
+
+// ===========================
+// HERO SECTION
+// ===========================
+
+// Hero Section - AMCAD Style
+.amcad-hero {
+	background: linear-gradient(135deg, @primary 0%, @secondary 100%);
+	color: white;
+	padding: 4rem 0;
+	margin-bottom: 3rem;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+	.amcad-hero-title {
+		font-family: @font-serif;
+		font-size: 3rem;
+		font-weight: 700;
+		margin-bottom: 1rem;
+		color: white;
+		text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+		@media (max-width: 768px) {
+			font-size: 2rem;
+		}
+	}
+
+	.amcad-hero-description {
+		font-size: 1.125rem;
+		line-height: 1.6;
+		margin-bottom: 1.5rem;
+		opacity: 0.95;
+	}
+
+	.amcad-hero-image {
+		text-align: center;
+
+		img {
+			border: 4px solid white;
+			transition: transform 0.3s ease;
+
+			&:hover {
+				transform: scale(1.05);
+			}
+		}
+	}
+}
+
+// Main Content
+.amcad-main-content {
+	padding: 2rem 0 4rem;
+}
+
+// Section Headers
+.amcad-section-header {
+	margin-bottom: 2.5rem;
+
+	.amcad-section-title {
+		font-family: @font-serif;
+		font-size: 2.5rem;
+		font-weight: 700;
+		color: @primary;
+		margin-bottom: 0.5rem;
+		position: relative;
+		display: inline-block;
+
+		&:after {
+			content: '';
+			position: absolute;
+			bottom: -10px;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 60px;
+			height: 3px;
+			background: @primary;
+		}
+	}
+
+	.amcad-section-subtitle {
+		font-size: 1.5rem;
+		color: @mid-grey;
+		font-weight: 600;
+		margin-top: 1rem;
+	}
+}
+
+// Current Issue Showcase
+.amcad-current-issue {
+	margin-bottom: 4rem;
+
+	.amcad-issue-published {
+		color: @mid-grey;
+		font-size: 1rem;
+		margin-top: 0.5rem;
+	}
+
+	.amcad-issue-showcase {
+		margin-top: 2rem;
+	}
+
+	.amcad-issue-cover-wrapper {
+		position: relative;
+
+		.amcad-issue-cover {
+			border-radius: 8px;
+			transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+			&:hover {
+				transform: translateY(-10px);
+				box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2) !important;
+			}
+		}
+	}
+
+	.amcad-issue-info {
+		padding: 1rem;
+
+		.amcad-issue-description {
+			margin-bottom: 1.5rem;
+
+			h3 {
+				font-family: @font-serif;
+				color: @dark-grey;
+				margin-bottom: 1rem;
+			}
+		}
+	}
+
+	.amcad-issue-galleys {
+		.amcad-galley-links {
+			display: flex;
+			gap: 0.5rem;
+			flex-wrap: wrap;
+		}
+	}
+}
+
+// Announcements Cards
+.amcad-announcements {
+	margin-bottom: 4rem;
+
+	.amcad-announcement-card {
+		border: none;
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+		transition: transform 0.3s ease, box-shadow 0.3s ease;
+		border-radius: 8px;
+
+		&:hover {
+			transform: translateY(-5px);
+			box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+		}
+
+		.amcad-announcement-title {
+			font-family: @font-serif;
+			color: @primary;
+			margin-bottom: 1rem;
+			font-weight: 700;
+		}
+
+		.amcad-announcement-description {
+			color: @dark-grey;
+			line-height: 1.6;
+			margin-bottom: 1rem;
+		}
+
+		.amcad-read-more {
+			color: @primary;
+			text-decoration: none;
+			font-weight: 600;
+			transition: color 0.3s ease;
+
+			&:hover {
+				color: @primary-link;
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+// Buttons - AMCAD Style
+.amcad-btn {
+	background: @primary;
+	border-color: @primary;
+	font-weight: 600;
+	padding: 0.75rem 2rem;
+	border-radius: 50px;
+	transition: all 0.3s ease;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+
+	&:hover {
+		background: darken(@primary, 10%);
+		border-color: darken(@primary, 10%);
+		transform: translateY(-2px);
+		box-shadow: 0 4px 8px rgba(1, 112, 185, 0.3);
+	}
+}
+
+.amcad-btn-outline {
+	color: @primary;
+	border-color: @primary;
+	font-weight: 600;
+	padding: 0.75rem 2rem;
+	border-radius: 50px;
+	transition: all 0.3s ease;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+
+	&:hover {
+		background: @primary;
+		color: white;
+		transform: translateY(-2px);
+		box-shadow: 0 4px 8px rgba(1, 112, 185, 0.3);
+	}
+}
+
+// Issue TOC Section
+.amcad-issue-toc {
+	margin-bottom: 3rem;
+}
+
+// Additional Content
+.amcad-additional-content {
+	background: @light-grey;
+	padding: 3rem 0;
+	border-radius: 8px;
+	margin-bottom: 3rem;
+}
+
+// Typography Enhancements
+body {
+	font-family: @font-sans;
+	color: @dark-grey;
+	font-size: 16px;
+	line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: @font-serif;
+	font-weight: 700;
+	color: @dark-grey;
+}
+
+a {
+	color: @primary;
+	transition: color 0.3s ease;
+
+	&:hover {
+		color: darken(@primary, 15%);
+	}
+}
+
+// Responsive Utilities
+@media (max-width: 768px) {
+	.amcad-section-header .amcad-section-title {
+		font-size: 2rem;
+	}
+
+	.amcad-hero {
+		padding: 2rem 0;
+	}
+
+	.amcad-main-content {
+		padding: 1rem 0 2rem;
+	}
+}

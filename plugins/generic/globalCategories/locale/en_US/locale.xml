@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<locale name="en_US" full_name="English (United States)">
+	<message key="plugins.generic.globalCategories.displayName">Global Journal Categories</message>
+	<message key="plugins.generic.globalCategories.description">Create global categories and assign them to journals.</message>
+	<message key="plugins.generic.globalCategories.tabLabel">Global Categories</message>
+
+	<message key="plugins.generic.globalCategories.settings.description">Create global categories and reuse them across journals.</message>
+	<message key="plugins.generic.globalCategories.settings.categoryTitle">Category title</message>
+	<message key="plugins.generic.globalCategories.settings.categoryPath">Category path</message>
+	<message key="plugins.generic.globalCategories.settings.addCategory">Add category</message>
+	<message key="plugins.generic.globalCategories.settings.validationError">Each category must have a title and a valid path (letters, numbers, _ or -).</message>
+	<message key="plugins.generic.globalCategories.settings.validationDuplicate">Category paths must be unique.</message>
+
+	<message key="plugins.generic.globalCategories.context.description">Select the global categories that apply to this journal.</message>
+	<message key="plugins.generic.globalCategories.context.none">No global categories have been created yet.</message>
+
+	<message key="plugins.generic.globalCategories.frontend.title">Categories</message>
+</locale>

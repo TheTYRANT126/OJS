@@ -1,0 +1,64 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: en_US\n"
+
+msgid "plugins.generic.globalCategories.displayName"
+msgstr "Global Journal Categories"
+
+msgid "plugins.generic.globalCategories.description"
+msgstr "Create global categories and assign them to journals."
+
+msgid "plugins.generic.globalCategories.tabLabel"
+msgstr "Global Categories"
+
+msgid "plugins.generic.globalCategories.settings.description"
+msgstr "Create global categories and reuse them across journals."
+
+msgid "plugins.generic.globalCategories.settings.categoryTitle"
+msgstr "Category title"
+
+msgid "plugins.generic.globalCategories.settings.categoryTitleOriginal"
+msgstr "Original ({$localeName})"
+
+msgid "plugins.generic.globalCategories.settings.categoryTitleTranslation"
+msgstr "Translation ({$localeName})"
+
+msgid "plugins.generic.globalCategories.settings.categoryPath"
+msgstr "Category path"
+
+msgid "plugins.generic.globalCategories.settings.categoryPathGenerated"
+msgstr "Generated path"
+
+msgid "plugins.generic.globalCategories.settings.pathWillBeGenerated"
+msgstr "Path will be generated automatically."
+
+msgid "plugins.generic.globalCategories.settings.addCategory"
+msgstr "Add category"
+
+msgid "plugins.generic.globalCategories.settings.validationError"
+msgstr "Each category must have a title."
+
+msgid "plugins.generic.globalCategories.settings.validationDuplicate"
+msgstr "Category paths must be unique."
+
+msgid "plugins.generic.globalCategories.context.description"
+msgstr "Select the global categories that apply to this journal."
+
+msgid "plugins.generic.globalCategories.context.none"
+msgstr "No global categories have been created yet."
+
+msgid "plugins.generic.globalCategories.context.addNewTitle"
+msgstr "Create a new global category"
+
+msgid "plugins.generic.globalCategories.context.addNewDescription"
+msgstr "Add a category here if it does not exist yet."
+
+msgid "plugins.generic.globalCategories.context.addNew"
+msgstr "Add new category"
+
+msgid "plugins.generic.globalCategories.frontend.title"
+msgstr "Categories"
+
+msgid "plugins.generic.globalCategories.adminLink"
+msgstr "Global journal categories"

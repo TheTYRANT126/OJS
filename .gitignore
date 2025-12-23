@@ -1,42 +1,37 @@
-# 1. Ignorar TODO por defecto en la raíz
+# 1. Ignorar TODO por defecto en la raiz
 /*
 
-# 2. Excepciones básicas (No ignorar estos archivos)
+# 2. Excepciones basicas (archivos sueltos)
 !.gitignore
 !README.md
 !.htaccess
 
-# 3. Permitir a Git ENTRAR en la ruta de carpetas (Whitelisting de directorios)
+# 3. Ignorar carpetas sensibles o pesadas
+/amcad-portal/contact_messages/messages_*.txt
+/amcad-portal/data/
+/amcad-portal/uploads/
+/.claude/
+
+# 4. Ignorar el contenido generico de plugins, portal y lib
+/plugins/*
+/amcad-portal/*
+/lib/*
+
+# 5. Volver a incluir las rutas necesarias (ordenado del padre al hijo)
 !/plugins/
 !/plugins/themes/
+!/plugins/themes/Amcad/
+!/plugins/themes/Amcad/**
+!/plugins/themes/AmcadX/
+!/plugins/themes/AmcadX/**
 !/plugins/generic/
-!/amcad-portal/
+!/plugins/generic/globalCategories/
+!/plugins/generic/globalCategories/**
+
+!/amcad-portal/**
+
 !/lib/
 !/lib/pkp/
 !/lib/pkp/templates/
 !/lib/pkp/templates/layouts/
-
-# 4. gnorar el contenido de esas carpetas para no subir otros temas basura
-/plugins/*
-/plugins/themes/*
-/plugins/generic/*
-/amcad-portal/*
-/lib/*
-
-# 5. no ignorar el tema
-!/plugins/themes/Amcad/
-!/plugins/themes/AmcadX/
-!/plugins/themes/AmcadX/**
-!/plugins/generic/globalCategories/
-!/amcad-portal/**
 !/lib/pkp/templates/layouts/backend.tpl
-
-# 6. Ignorar mensajes de contacto (datos sensibles)
-/amcad-portal/contact_messages/messages_*.txt
-
-# 7. Ignorar base de datos de administración y archivos subidos
-/amcad-portal/data/
-/amcad-portal/uploads/
-
-# 8. Ignorar configuraciones locales
-/.claude/

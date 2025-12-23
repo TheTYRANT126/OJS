@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<locale name="es" full_name="Español">
+	<message key="plugins.generic.globalCategories.displayName">Categorías globales de revistas</message>
+	<message key="plugins.generic.globalCategories.description">Crea categorías globales y asígnalas a varias revistas.</message>
+	<message key="plugins.generic.globalCategories.tabLabel">Categorías globales</message>
+
+	<message key="plugins.generic.globalCategories.settings.description">Crea categorías globales y reutilízalas en varias revistas.</message>
+	<message key="plugins.generic.globalCategories.settings.categoryTitle">Nombre de la categoría</message>
+	<message key="plugins.generic.globalCategories.settings.categoryPath">Ruta de la categoría</message>
+	<message key="plugins.generic.globalCategories.settings.addCategory">Añadir categoría</message>
+	<message key="plugins.generic.globalCategories.settings.validationError">Cada categoría debe tener un nombre y una ruta válida (letras, números, _ o -).</message>
+	<message key="plugins.generic.globalCategories.settings.validationDuplicate">Las rutas de categoría deben ser únicas.</message>
+
+	<message key="plugins.generic.globalCategories.context.description">Selecciona las categorías globales que aplican a esta revista.</message>
+	<message key="plugins.generic.globalCategories.context.none">Aún no se han creado categorías globales.</message>
+
+	<message key="plugins.generic.globalCategories.frontend.title">Categorías</message>
+</locale>

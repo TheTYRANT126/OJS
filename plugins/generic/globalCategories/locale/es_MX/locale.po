@@ -1,0 +1,64 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: es_MX\n"
+
+msgid "plugins.generic.globalCategories.displayName"
+msgstr "Categorías globales de revistas"
+
+msgid "plugins.generic.globalCategories.description"
+msgstr "Crea categorías globales y asígnalas a varias revistas."
+
+msgid "plugins.generic.globalCategories.tabLabel"
+msgstr "Categorías globales"
+
+msgid "plugins.generic.globalCategories.settings.description"
+msgstr "Crea categorías globales y reutilízalas en varias revistas."
+
+msgid "plugins.generic.globalCategories.settings.categoryTitle"
+msgstr "Nombre de la categoría"
+
+msgid "plugins.generic.globalCategories.settings.categoryTitleOriginal"
+msgstr "Original ({$localeName})"
+
+msgid "plugins.generic.globalCategories.settings.categoryTitleTranslation"
+msgstr "Traducción ({$localeName})"
+
+msgid "plugins.generic.globalCategories.settings.categoryPath"
+msgstr "Ruta de la categoría"
+
+msgid "plugins.generic.globalCategories.settings.categoryPathGenerated"
+msgstr "Ruta generada"
+
+msgid "plugins.generic.globalCategories.settings.pathWillBeGenerated"
+msgstr "La ruta se generará automáticamente."
+
+msgid "plugins.generic.globalCategories.settings.addCategory"
+msgstr "Añadir categoría"
+
+msgid "plugins.generic.globalCategories.settings.validationError"
+msgstr "Cada categoría debe tener un nombre."
+
+msgid "plugins.generic.globalCategories.settings.validationDuplicate"
+msgstr "Las rutas de categoría deben ser únicas."
+
+msgid "plugins.generic.globalCategories.context.description"
+msgstr "Selecciona las categorías globales que aplican a esta revista. Estas categorías servirán para filtrar en la página principal."
+
+msgid "plugins.generic.globalCategories.context.none"
+msgstr "Aún no se han creado categorías globales."
+
+msgid "plugins.generic.globalCategories.context.addNewTitle"
+msgstr "Crear nueva categoría global"
+
+msgid "plugins.generic.globalCategories.context.addNewDescription"
+msgstr "Agrega una categoría aquí si todavía no existe."
+
+msgid "plugins.generic.globalCategories.context.addNew"
+msgstr "Agregar nueva categoría"
+
+msgid "plugins.generic.globalCategories.frontend.title"
+msgstr "Categorías"
+
+msgid "plugins.generic.globalCategories.adminLink"
+msgstr "Categorías globales de revistas"

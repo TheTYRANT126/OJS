@@ -1,0 +1,72 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2020-04-23T10:23:53+00:00\n"
+"PO-Revision-Date: 2020-04-23T10:23:53+00:00\n"
+"Language: \n"
+
+msgid "plugins.themes.AmcadX.name"
+msgstr "Tema AMCAD X"
+
+msgid "plugins.themes.AmcadX.description"
+msgstr "Tema personalizado para la Asociación Mexicana de Cirugía del Aparato Digestivo."
+
+msgid "plugins.themes.AmcadX.option.colour.label"
+msgstr "Color principal"
+
+msgid "plugins.themes.AmcadX.option.colour.description"
+msgstr "Seleccione el color principal de su revista."
+
+msgid "plugins.themes.AmcadX.nav.toggle"
+msgstr "Alternar navegación"
+
+msgid "plugins.themes.AmcadX.issueDescription"
+msgstr "Descripción de la edición"
+
+msgid "plugins.themes.AmcadX.nav.toggle"
+msgstr "Alternar navegación"
+
+msgid "plugins.themes.AmcadX.language.toggle"
+msgstr "Cambiar el idioma. El actual es:"
+
+msgid "plugins.themes.AmcadX.currentIssuePublished"
+msgstr "Publicado {$date}"
+
+msgid "plugins.themes.AmcadX.issueDescription"
+msgstr "Descripción de la edición"
+
+msgid "plugins.themes.AmcadX.issuePubId"
+msgstr "{$pubIdType}: {$pubId}"
+
+msgid "plugins.themes.AmcadX.more"
+msgstr "{$text}…"
+
+msgid "plugins.themes.AmcadX.article.authorBio"
+msgstr "Bio"
+
+msgid "plugins.themes.AmcadX.article.supplementaryFiles"
+msgstr "Archivos suplementarios"
+
+msgid "plugins.themes.AmcadX.register.haveAccount"
+msgstr "¿Ya posee una cuenta?"
+
+msgid "plugins.themes.AmcadX.register.loginHere"
+msgstr "Ingresar aquí"
+
+msgid "plugins.themes.AmcadX.register.noAccount"
+msgstr "¿Sin cuenta?"
+
+msgid "plugins.themes.AmcadX.register.registerHere"
+msgstr "Registrarse aquí"
+
+msgid "plugins.themes.AmcadX.search.resultsFor"
+msgstr "Resultados de la búsqueda de <em>{$query}</em>"
+
+msgid "plugins.themes.AmcadX.search.params"
+msgstr "Parámetros de búsqueda"
