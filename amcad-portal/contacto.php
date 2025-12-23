@@ -150,6 +150,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit_contact'])) {
                         <a href="mailto:amcadac@gmail.com">
                             <img src="assets/images/correo_icon.png" alt="Email">
                         </a>
+                        <a href="https://amcad.com.mx/" target="_blank" rel="noopener">
+                            <img src="assets/images/web_icon.png" alt="Sitio web AMCAD">
+                        </a>
                     </div>
                 </div>
             </div>

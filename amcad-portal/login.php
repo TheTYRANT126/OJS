@@ -278,6 +278,9 @@ $pageTitle = "Portal AMCAD - " . t('login_title', $lang);
                         <a href="mailto:amcadac@gmail.com">
                             <img src="<?php echo $baseUrl; ?>/amcad-portal/assets/images/correo_icon.png" alt="Email">
                         </a>
+                        <a href="https://amcad.com.mx/" target="_blank" rel="noopener">
+                            <img src="<?php echo $baseUrl; ?>/amcad-portal/assets/images/web_icon.png" alt="Sitio web AMCAD">
+                        </a>
                     </div>
                 </div>
             </div>
