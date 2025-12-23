@@ -1,0 +1,36 @@
+sudo: true
+
+dist: trusty
+
+language: php
+
+php:
+  - 7.3
+  - 7.2
+  - 7.1
+  - nightly
+
+cache:
+  directories:
+    - $HOME/.composer/cache
+
+install: travis_retry composer install
+
+before_script: sudo locale-gen uk_UA.UTF-8
+
+script: composer test
+
+jobs:
+  allow_failures:
+    - php: nightly
+
+  include:
+    - stage: Quality assurance
+      env: CODE_COVERAGE
+      before_script:
+        - mkdir -p build/logs
+      script: composer cover
+      after_script: composer coveralls
+    - stage: Quality assurance
+      env: CODE_STANDARDS
+      script: composer check-style

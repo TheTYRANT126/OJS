@@ -1,0 +1,11 @@
+@import url("https://fonts.example.org/icon?family=Foo+Bar");
+@import url("http://fonts.example.org/icon?family=Foo+Bar");
+@import url("//fonts.example.org/icon?family=Foo+Bar");
+@media screen and (max-width: 1024px) {
+  .import-a {
+    color: #fff;
+  }
+}
+.import-b {
+  color: #111;
+}

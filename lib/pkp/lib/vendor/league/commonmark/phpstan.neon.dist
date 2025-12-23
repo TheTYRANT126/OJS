@@ -1,0 +1,9 @@
+parameters:
+  level: 7
+  paths:
+    - src
+  ignoreErrors:
+    - path: src/Extension/TableOfContents/TableOfContents.php
+      message: '#If condition is always false#'
+    - path: src/Util/ArrayCollection.php
+      message: '#does not accept key int#'
