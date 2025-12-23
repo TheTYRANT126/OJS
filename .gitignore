@@ -4,6 +4,7 @@
 # 2. Excepciones básicas (No ignorar estos archivos)
 !.gitignore
 !README.md
+!.htaccess
 
 # 3. Permitir a Git ENTRAR en la ruta de carpetas (Whitelisting de directorios)
 !/plugins/

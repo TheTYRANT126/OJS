@@ -1,0 +1,5 @@
+RewriteEngine On
+
+# Redirigir raíz a amcad-portal/index.php
+RewriteRule ^$ amcad-portal/index.php [L]
+RewriteRule ^index\.php$ amcad-portal/index.php [L]

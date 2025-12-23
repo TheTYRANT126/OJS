@@ -91,6 +91,7 @@
 .amcad-portal-shell .lang-selector {
     display: flex;
     align-items: center;
+    margin-left: 15px;
 }
 
 .amcad-portal-shell .lang-link {
@@ -181,4 +182,13 @@
     .amcad-portal-shell .header-logo img {
         height: 44px;
     }
+}
+
+.header-lang-item { margin-left: 10px; }
+.header-lang-item {
+    display: flex;
+    align-items: center;
+}
+.header-lang-item .lang-link {
+    font-weight: 600;
 }

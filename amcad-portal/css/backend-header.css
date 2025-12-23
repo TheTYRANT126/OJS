@@ -106,7 +106,9 @@
 
 .amcad-backend .header-logo-link {
     text-decoration: none;
-    display: block;
+    display: flex;
+    align-items: center;
+    height: 100%;
 }
 
 .amcad-backend .header-logo img {
@@ -167,12 +169,11 @@
     color: #84ac74;
 }
 
-.amcad-backend .lang-selector {
+.amcad-backend .header-lang-item {
     display: flex;
     align-items: center;
 }
-
-.amcad-backend .lang-link {
+.amcad-backend .header-lang-item .lang-link {
     display: inline-flex;
     align-items: center;
     gap: 8px;
@@ -275,15 +276,8 @@
         font-size: 0.9rem;
     }
 
-    .amcad-backend .lang-selector {
-        display: none;
-        width: auto;
-        align-self: center;
-        text-align: center;
-    }
-
-    .amcad-backend .main-nav.is-open ~ .lang-selector {
-        display: flex;
+    .amcad-backend .header-lang-item {
+        justify-content: center;
     }
 }
 
