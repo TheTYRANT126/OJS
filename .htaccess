@@ -1,7 +1,11 @@
 RewriteEngine On
 
-# Evitar recursión
-RewriteCond %{REQUEST_URI} !^/amcad-portal/
+# Allow the native OJS front controller and supporting paths (login, register, API, etc.)
+RewriteRule ^(index|api|cache|classes|controllers|dbscripts|docs|files|js|lib|locale|pages|plugins|public|registry|schemas|styles|templates|tools)(/.*)?$ - [L]
 
-# Redirigir todas las solicitudes a la carpeta amcad-portal conservando la ruta
+# Let important root files bypass the portal reroute
+RewriteRule ^(config\.inc\.php|config\.TEMPLATE\.inc\.php|favicon\.ico|robots\.txt|README\.md|index\.php)$ - [L]
+
+# Anything else (including the site root and portal assets) should resolve inside /amcad-portal
+RewriteCond %{REQUEST_URI} !^/amcad-portal/
 RewriteRule ^(.*)$ amcad-portal/$1 [L]
